@@ -1,0 +1,15 @@
+:root {
+    --Text-Primary: #1e1e1e;
+    --Text-Secondary: #363636;
+    --Text-on-Colour: white;
+    --Brand-Colour: #F16244;
+    --Secondary-Text-on-Colour: #FFC300;
+    --BG-Primary: #C70039;
+    --BG-Secondary: #900C3F;
+    --Border-Primary: #D5B336
+}
+
+@font-face {
+    font-family: "EatingPasta";
+    src: url("Eating\ Pasta.ttf");
+}
