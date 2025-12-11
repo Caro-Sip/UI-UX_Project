@@ -9,7 +9,71 @@
     --Border-Primary: #D5B336
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
-    font-family: "EatingPasta";
-    src: url("Eating\ Pasta.ttf");
+    font-family: EatingPasta;
+    src: url("eating-pasta/Eating\ Pasta.otf");
+}
+
+header {
+    background-color: var(--Brand-Colour);
+}
+
+.site-header {
+    color: var(--Text-Primary);
+    /* width: 100%; */
+    position: relative;
+    padding: 12px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    /* or your layout width */
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+.site-header .logo {
+    font-family: EatingPasta;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Text-Primary);
+    font-size: 1.25rem;
+}
+
+.site-header .nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-header .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.site-header .nav-link i {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 1.25rem;
 }
