@@ -20,22 +20,29 @@ body {
     src: url("eating-pasta/Eating\ Pasta.otf");
 }
 
-header {
-    background-color: var(--Brand-Colour);
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 .site-header {
-    color: var(--Text-Primary);
-    /* width: 100%; */
-    position: relative;
+    width: 100%;
     padding: 12px 0;
+    position: relative;
+    background: var(--Brand-Colour);
 }
 
 .header-content {
     max-width: 1200px;
-    /* or your layout width */
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,3 +84,58 @@ header {
     vertical-align: middle;
     font-size: 1.25rem;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: var(--Brand-Colour);
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    flex: 1;
+    background-color: var(--BG-Secondary);
+    padding: 3rem; /* vertical padding */
+    color: var(--Secondary-Text-on-Colour);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-family: EatingPasta;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.hero-text h3 {
+    font-family: EatingPasta;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.hero-text p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    font-family: EatingPasta;
+    background-color: var(--BG-Primary);
+    color: var(--Secondary-Text-on-Colour);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
