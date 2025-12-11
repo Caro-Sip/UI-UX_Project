@@ -222,3 +222,24 @@ body {
     font-family: EatingPasta;
     text-align: center;
 }
+
+footer {
+    background-color: var(--Brand-Colour);
+    display: felx;
+}
+
+.footer-content {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.footer-link {
+    text-decoration: none;
+}
