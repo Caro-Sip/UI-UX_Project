@@ -173,3 +173,38 @@ body {
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+.features {
+    display: grid;
+    gap: 3rem;
+}
+
+.feature-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.feature-card img {
+    order: 2;
+}
+
+.feature-card .text {
+    text-align: right;
+    order: 1;
+}
+
+.feature-card.reverse img {
+    order: 1;
+}
+
+.feature-card.reverse .text {
+    text-align: left;
+    order: 2;
+}
+
+.features .quote {
+    font-family: EatingPasta;
+    text-align: center;
+}
