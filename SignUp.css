@@ -1,0 +1,99 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Assets/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-container .logo {
+    color: var(--Brand-Colour, #F16244);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: 'EatingPasta', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--Text-Secondary, #363636);
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--Brand-Colour, #F16244);
+    outline: none;
+}
+
+button#button {
+    background-color: var(--Brand-Colour, #F16244);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+button#button:hover {
+    background-color: #d94e30;
+}
+
+.login-link {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--Text-Secondary, #363636);
+    text-align: center;
+}
+
+.login-link a {
+    color: var(--Brand-Colour, #F16244);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,91 +1,3 @@
-:root {
-    --Text-Primary: #1e1e1e;
-    --Text-Secondary: #363636;
-    --Text-on-Colour: white;
-    --Brand-Colour: #F16244;
-    --Secondary-Text-on-Colour: #FFC300;
-    --BG-Primary: #C70039;
-    --BG-Secondary: #900C3F;
-    --Border-Primary: #D5B336
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: EatingPasta;
-    src: url("eating-pasta/Eating\ Pasta.otf");
-}
-
-html,
-body {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-.site-header {
-    width: 100%;
-    padding: 12px 0;
-    position: relative;
-    background: var(--Brand-Colour);
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.site-header .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1rem;
-}
-
-.site-header .logo {
-    font-family: EatingPasta;
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--Text-Primary);
-    font-size: 1.25rem;
-}
-
-.site-header .nav {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: inherit;
-}
-
-.site-header .nav-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: var(--Text-Primary);
-}
-
-.site-header .nav-link i {
-    line-height: 1;
-    vertical-align: middle;
-    font-size: 1.25rem;
-}
-
 .hero {
     display: flex;
     align-items: stretch;
@@ -177,6 +89,7 @@ body {
 
 .features {
     max-width: 1200px;
+    margin: 0 auto;
     padding: 0 100px;
     display: grid;
     gap: 3rem;
@@ -193,7 +106,7 @@ body {
     position: relative;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     display: block;
     order: 2;
@@ -208,7 +121,7 @@ body {
     position: relative;
     inset: 0;
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     display: block;
     order: 1;
@@ -222,26 +135,4 @@ body {
 .features .quote {
     font-family: EatingPasta;
     text-align: center;
-}
-
-footer {
-    background-color: var(--Brand-Colour);
-}
-
-.footer-content {
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-nav {
-    display: flex;
-    gap: 1rem;
-    text-decoration: none;
-}
-
-.footer-link {
-    text-decoration: none;
-    color: var(--Text-Primary);
 }
