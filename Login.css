@@ -80,22 +80,6 @@ input[type="password"]:focus {
     text-decoration: underline;
 }
 
-button#button {
-    background-color: var(--Brand-Colour, #F16244);
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button#button:hover {
-    background-color: #d94e30; /* Slightly darker shade */
-}
-
 .signup-link {
     margin-top: 1.5rem;
     font-size: 0.95rem;

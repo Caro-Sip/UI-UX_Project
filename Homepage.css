@@ -76,17 +76,6 @@
     margin-bottom: 2rem;
 }
 
-.hero-actions .btn {
-    display: inline-block;
-    white-space: nowrap;
-    font-family: EatingPasta;
-    background-color: var(--BG-Primary);
-    color: var(--Secondary-Text-on-Colour);
-    padding: 1rem 2rem;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
 .features {
     max-width: 1200px;
     margin: 0 auto;
