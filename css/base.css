@@ -23,7 +23,7 @@ body {
 
 @font-face {
     font-family: EatingPasta;
-    src: url("eating-pasta/Eating\ Pasta.otf");
+    src: url("../eating-pasta/Eating\ Pasta.otf");
 }
 
 *,
