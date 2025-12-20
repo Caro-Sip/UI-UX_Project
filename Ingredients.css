@@ -1,0 +1,218 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Assets/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    height: calc(100vh - 150px);
+}
+
+/* Ingredients Panel */
+.ingredients-panel {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-family: 'EatingPasta', sans-serif;
+    font-size: 1.5rem;
+    color: var(--Brand-Colour);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--Border-Primary);
+    padding-bottom: 5px;
+}
+
+.items-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--Brand-Colour) #e0e0e0;
+}
+
+.items-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.items-row::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.items-row::-webkit-scrollbar-thumb {
+    background: var(--Brand-Colour);
+    border-radius: 4px;
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--Border-Primary);
+    border-radius: 12px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item-name {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--Text-Primary);
+    font-weight: 600;
+}
+
+.order-panel {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+    height: fit-content;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.bowl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bowl-title {
+    font-family: 'EatingPasta', sans-serif;
+    font-size: 1.2rem;
+    color: var(--Brand-Colour);
+}
+
+.bowl-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--Text-Primary);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.order-item-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.qty-btn {
+    width: 24px;
+    height: 24px;
+    background: var(--Brand-Colour);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn:hover {
+    background-color: var(--Button-Hover);
+}
+
+.order-item-price {
+    color: var(--Text-Secondary);
+    font-weight: 600;
+}
+
+.sauce-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #ddd;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.btn-another,
+.btn-checkout {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'EatingPasta', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-another {
+    background-color: var(--Secondary-Text-on-Colour);
+    color: var(--Text-Primary);
+}
+
+.btn-another:hover {
+    background-color: #e6b000;
+}
+
+.btn-checkout {
+    background-color: var(--Brand-Colour);
+    color: white;
+}
+
+.btn-checkout:hover {
+    background-color: var(--Button-Hover);
+}
