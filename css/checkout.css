@@ -93,7 +93,7 @@ body {
     flex: 1;
     padding: 12px 20px;
     border: none;
-    border-radius: 0; /* Sharp angles */
+    border-radius: 0;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;

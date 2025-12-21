@@ -125,7 +125,7 @@ button,
     cursor: pointer;
     font-size: 1.1rem;
     transition: background-color 0.3s, transform 0.1s;
-    border-radius: 0; /* Sharp angles */
+    border-radius: 0;
 }
 
 button:hover,

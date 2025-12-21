@@ -17,7 +17,7 @@ body {
 .confirmation-box {
     background: var(--BG-Secondary);
     padding: 60px 80px;
-    border-radius: 0; /* Sharp angles */
+    border-radius: 0;
     text-align: center;
     max-width: 500px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
