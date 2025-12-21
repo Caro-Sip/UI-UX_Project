@@ -26,7 +26,7 @@ main {
 .ingredients-panel {
     flex: 1;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
+    border-radius: 0; /* Sharp angles */
     padding: 20px;
     overflow-y: auto;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -84,7 +84,7 @@ main {
     width: 100px;
     height: 100px;
     border: 2px solid var(--Border-Primary);
-    border-radius: 12px;
+    border-radius: 0; /* Sharp angles */
     object-fit: contain;
     background: white;
     padding: 5px;
@@ -101,7 +101,7 @@ main {
 .order-panel {
     width: 350px;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
+    border-radius: 0; /* Sharp angles */
     padding: 20px;
     height: fit-content;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -155,7 +155,7 @@ main {
     background: var(--Brand-Colour);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 0; /* Sharp angles */
     font-size: 1rem;
     line-height: 1;
     cursor: pointer;
@@ -191,7 +191,7 @@ main {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 6px;
+    border-radius: 0; /* Sharp angles */
     font-family: 'EatingPasta', sans-serif;
     font-size: 1rem;
     cursor: pointer;

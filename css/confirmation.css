@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://placehold.co/1400x900/3d2b1f/3d2b1f') center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.confirmation-box {
+    background: var(--BG-Secondary);
+    padding: 60px 80px;
+    border-radius: 0; /* Sharp angles */
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cart-icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+
+.cart-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--Border-Primary);
+}
+
+.cart-icon circle {
+    fill: var(--Border-Primary);
+}
+
+.main-message {
+    color: var(--Border-Primary);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: EatingPasta, sans-serif;
+}
+
+.sub-message {
+    color: var(--Border-Primary);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: EatingPasta, sans-serif;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
