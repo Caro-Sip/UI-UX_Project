@@ -1,11 +1,11 @@
 // Authentication Management System
-// Uses localStorage for persistent storage across sessions
+// Uses sessionStorage for temporary storage (clears when browser closes)
 
 // Initialize auth system
 function initAuth() {
     // Create users storage if it doesn't exist
-    if (!localStorage.getItem('users')) {
-        localStorage.setItem('users', JSON.stringify([]));
+    if (!sessionStorage.getItem('users')) {
+        sessionStorage.setItem('users', JSON.stringify([]));
     }
 }
 
@@ -27,7 +27,7 @@ function signUp(email, password) {
     }
     
     // Get existing users
-    const users = JSON.parse(localStorage.getItem('users'));
+    const users = JSON.parse(sessionStorage.getItem('users'));
     
     // Check if user already exists
     if (users.find(user => user.email === email)) {
@@ -42,7 +42,7 @@ function signUp(email, password) {
     };
     
     users.push(newUser);
-    localStorage.setItem('users', JSON.stringify(users));
+    sessionStorage.setItem('users', JSON.stringify(users));
     
     return { success: true, message: 'Account created successfully!' };
 }
@@ -57,7 +57,7 @@ function login(email, password) {
     }
     
     // Get existing users
-    const users = JSON.parse(localStorage.getItem('users'));
+    const users = JSON.parse(sessionStorage.getItem('users'));
     
     // Find user
     const user = users.find(u => u.email === email && u.password === password);
@@ -78,7 +78,7 @@ function login(email, password) {
 // Logout user
 function logout() {
     sessionStorage.removeItem('currentUser');
-    window.location.href = 'index.html';
+    window.location.href = 'Homepage.html';
 }
 
 // Check if user is logged in
