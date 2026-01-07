@@ -168,4 +168,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // Handle checkout button to save order data
+    const checkoutBtn = document.querySelector('.btn-checkout');
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Save order data to localStorage
+            localStorage.setItem('orderData', JSON.stringify(orderState));
+            // Navigate to checkout
+            window.location.href = 'checkout.html';
+        });
+    }
 });

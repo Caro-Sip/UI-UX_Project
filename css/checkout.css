@@ -123,3 +123,116 @@ body {
 .btn-order:hover {
     background: var(--Button-Hover);
 }
+
+/* Location Markers */
+.location-marker {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+.location-marker:hover {
+    transform: scale(1.1);
+}
+
+.marker-icon {
+    width: 30px;
+    height: 30px;
+    background: var(--BG-Primary);
+    border: 3px solid white;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.marker-icon::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.marker-label {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: none;
+    pointer-events: none;
+}
+
+.location-marker:hover .marker-label {
+    display: block;
+}
+
+.location-marker.selected .marker-icon {
+    background: #28a745;
+    transform: rotate(-45deg) scale(1.2);
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: rotate(-45deg) scale(1.2); }
+    50% { transform: rotate(-45deg) scale(1.3); }
+}
+
+.location-marker.selected .marker-label {
+    display: block;
+    background: #28a745;
+    color: white;
+}
+
+/* Selected Location Display */
+.selected-location {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background: #f8f9fa;
+    border-left: 4px solid var(--BG-Primary);
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.location-info i {
+    font-size: 20px;
+    color: var(--BG-Primary);
+}
+
+.location-info.warning {
+    color: #856404;
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.location-info.warning i {
+    color: #ffc107;
+}
+
+.empty-message {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}

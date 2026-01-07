@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/88876463e2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/checkout.css">
+    <script defer src="../js/checkout.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -29,49 +30,27 @@
         <div class="order-panel">
             <div class="bowl-header">
                 <div class="bowl-title">Malatang Bowl #1</div>
-                <div class="bowl-price">$xx.xx</div>
+                <div class="bowl-price" id="bowl-total">$0.00</div>
             </div>
 
-            <div class="order-item">
-                <span>1x Ingredients</span>
-                <div class="order-item-price">$xx.xx</div>
-            </div>
-
-            <div class="order-item">
-                <span>1x Ingredients</span>
-                <div class="order-item-price">$xx.xx</div>
-            </div>
-
-            <div class="order-item">
-                <span>2x Ingredients</span>
-                <div class="order-item-price">$xx.xx</div>
-            </div>
-
-            <div class="order-item">
-                <span>8x Ingredients</span>
-                <div class="order-item-price">$xx.xx</div>
+            <div id="order-items-container">
+                <p class="empty-message">Loading...</p>
             </div>
 
             <div class="sauce-section">
                 <div class="bowl-header">
                     <div class="bowl-title">Custom Sauce #1</div>
-                    <div class="bowl-price">$00.00</div>
+                    <div class="bowl-price" id="sauce-total">$0.00</div>
                 </div>
 
-                <div class="order-item">
-                    <span>1x Ingredients</span>
-                    <div class="order-item-price">$xx.xx</div>
-                </div>
-
-                <div class="order-item">
-                    <span>1x Ingredients</span>
-                    <div class="order-item-price">$xx.xx</div>
+                <div id="sauce-items-container">
+                    <p class="empty-message">Loading...</p>
                 </div>
             </div>
 
             <div class="action-buttons">
                 <button class="btn btn-back" onclick="window.location.href='Ingredients.html'">GO BACK</button>
-                <button class="btn btn-order" onclick="window.location.href='confirmation.html'">ORDER</button>
+                <button class="btn btn-order">ORDER</button>
             </div>
         </div>
     </div>

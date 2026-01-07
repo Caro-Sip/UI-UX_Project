@@ -116,10 +116,11 @@ main {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 0;
     padding: 20px;
-    height: fit-content;
+    max-height: calc(100vh - 150px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .bowl-header {
@@ -141,6 +142,31 @@ main {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--Text-Primary);
+}
+
+#order-items-container {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#order-items-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#order-items-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#order-items-container::-webkit-scrollbar-thumb {
+    background: var(--Brand-Colour);
+    border-radius: 3px;
+}
+
+#order-items-container::-webkit-scrollbar-thumb:hover {
+    background: var(--Button-Hover);
 }
 
 .order-item {
@@ -198,6 +224,31 @@ main {
     margin-top: 20px;
     padding-top: 15px;
     border-top: 2px dashed #ddd;
+}
+
+#sauce-items-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#sauce-items-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#sauce-items-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#sauce-items-container::-webkit-scrollbar-thumb {
+    background: var(--Brand-Colour);
+    border-radius: 3px;
+}
+
+#sauce-items-container::-webkit-scrollbar-thumb:hover {
+    background: var(--Button-Hover);
 }
 
 .action-buttons {
