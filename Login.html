@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/88876463e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/SignUp.css">
-    <title>MalatangXFast - Sign Up</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <title>MalatangXFast - Login</title>
 </head>
 <body>
-    <script src="../js/auth.js"></script>
+    <script src="js/auth.js"></script>
     <header class="site-header">
         <div class="container header-content">
             <a class="logo" href="Homepage.html">MalatangXFast</a>
             <nav class="nav">
-                <a href="Login.html" class="nav-link">
+                <a href="#" class="nav-link">
                     Login <i class="fa-regular fa-circle-user" style="font-size: x-large;"></i>
                 </a>
             </nav>
@@ -22,7 +22,7 @@
     </header>
 
     <main>
-        <div class="signup-container">
+        <div class="login-container">
             <h2 class="logo">MalatangXFast</h2>
             <form action="#" method="POST">
                 <label for="email">Email:</label>
@@ -31,11 +31,15 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password">
                 
-                <button type="button" name="button" id="button">Sign Up</button>
+                <div class="form-footer">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
 
-                <p class="login-link">
-                    <span>Already have an account?</span>
-                    <a href="Login.html">Login here!</a>
+                <button type="button" name="button" id="button">Login</button>
+                
+                <p class="signup-link">
+                    <span>New user?</span>
+                    <a href="SignUp.html">Create an account!</a>
                 </p>
             </form>
         </div>
@@ -58,20 +62,20 @@
             window.location.href = 'Homepage.html';
         }
         
-        // Handle signup form submission
+        // Handle login form submission
         document.getElementById('button').addEventListener('click', function(e) {
             e.preventDefault();
             
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             
-            const result = signUp(email, password);
+            const result = login(email, password);
             
             if (result.success) {
                 showToast(result.message, 'success');
                 setTimeout(() => {
-                    window.location.href = 'Login.html';
-                }, 1500);
+                    window.location.href = 'Homepage.html';
+                }, 1000);
             } else {
                 showToast(result.message, 'error');
             }

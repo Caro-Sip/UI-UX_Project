@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracking - MALATANGXFAST</title>
+    <title>Location - MALATANGXFAST</title>
     <script src="https://kit.fontawesome.com/88876463e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/tracking.css">
-    <script src="../js/auth.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="js/auth.js"></script>
+    <script defer src="js/checkout.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -27,7 +28,32 @@
             <div class="map-placeholder"></div>
         </div>
 
-        <button class="btn-home" onclick="window.location.href='Homepage.html'">GO HOME</button>
+        <div class="order-panel">
+            <div class="bowl-header">
+                <div class="bowl-title">Malatang Bowl #1</div>
+                <div class="bowl-price" id="bowl-total">$0.00</div>
+            </div>
+
+            <div id="order-items-container">
+                <p class="empty-message">Loading...</p>
+            </div>
+
+            <div class="sauce-section">
+                <div class="bowl-header">
+                    <div class="bowl-title">Custom Sauce #1</div>
+                    <div class="bowl-price" id="sauce-total">$0.00</div>
+                </div>
+
+                <div id="sauce-items-container">
+                    <p class="empty-message">Loading...</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-back" onclick="window.location.href='Ingredients.html'">GO BACK</button>
+                <button class="btn btn-order">ORDER</button>
+            </div>
+        </div>
     </div>
 
     <footer class="site-footer">

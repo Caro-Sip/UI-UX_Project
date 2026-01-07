@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location - MALATANGXFAST</title>
+    <title>Order Confirmed - MALATANGXFAST</title>
     <script src="https://kit.fontawesome.com/88876463e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/checkout.css">
-    <script src="../js/auth.js"></script>
-    <script defer src="../js/checkout.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/confirmation.css">
+    <script src="js/auth.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -24,34 +23,21 @@
     </header>
 
     <div class="main-container">
-        <div class="map-panel">
-            <div class="map-placeholder"></div>
-        </div>
-
-        <div class="order-panel">
-            <div class="bowl-header">
-                <div class="bowl-title">Malatang Bowl #1</div>
-                <div class="bowl-price" id="bowl-total">$0.00</div>
+        <div class="confirmation-box">
+            <div class="cart-icon">
+                <svg viewBox="0 0 100 100" fill="none" stroke-width="4">
+                    <path d="M25 25 L35 25 L35 60 L75 60" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35 35 L80 35 L75 55 L35 55" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M80 35 L85 25" stroke-linecap="round"/>
+                    <circle cx="45" cy="75" r="6"/>
+                    <circle cx="65" cy="75" r="6"/>
+                </svg>
             </div>
-
-            <div id="order-items-container">
-                <p class="empty-message">Loading...</p>
-            </div>
-
-            <div class="sauce-section">
-                <div class="bowl-header">
-                    <div class="bowl-title">Custom Sauce #1</div>
-                    <div class="bowl-price" id="sauce-total">$0.00</div>
-                </div>
-
-                <div id="sauce-items-container">
-                    <p class="empty-message">Loading...</p>
-                </div>
-            </div>
-
+            <div class="main-message">YOUR MALATANG WILL SOON BE WITH YOU!</div>
+            <div class="sub-message">THANK YOU FOR SUPPORTING US</div>
             <div class="action-buttons">
-                <button class="btn btn-back" onclick="window.location.href='Ingredients.html'">GO BACK</button>
-                <button class="btn btn-order">ORDER</button>
+                <button class="btn" onclick="window.location.href='Homepage.html'">GO HOME</button>
+                <button class="btn" onclick="window.location.href='tracking.html'">TRACK YOUR ORDER?</button>
             </div>
         </div>
     </div>
