@@ -125,3 +125,154 @@
     font-family: EatingPasta;
     text-align: center;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .hero {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+    }
+
+    .hero-overlay {
+        transform: translateX(-100px);
+        gap: 50px;
+        padding: 2.5rem;
+    }
+
+    .hero-content {
+        flex: 0 0 480px;
+        padding: 40px;
+    }
+
+    .features {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-image {
+        min-height: 300px;
+        order: 1;
+    }
+
+    .hero-content {
+        flex: 0 0 auto;
+        padding: 20px;
+        order: 2;
+    }
+
+    .hero-overlay {
+        transform: translateX(0);
+        gap: 20px;
+        padding: 2rem 1.5rem;
+        box-shadow: none;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-text p {
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .features {
+        padding: 0 20px;
+        gap: 2rem;
+    }
+
+    .feature-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .feature-card img,
+    .feature-card.reverse img {
+        order: 1;
+        height: 200px;
+    }
+
+    .feature-card .text,
+    .feature-card.reverse .text {
+        order: 2;
+        text-align: center;
+    }
+
+    .features .quote {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-image {
+        min-height: 200px;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .hero-overlay {
+        padding: 1.5rem 1rem;
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .features {
+        padding: 0 15px;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        gap: 0.75rem;
+    }
+
+    .feature-card img,
+    .feature-card.reverse img {
+        height: 150px;
+    }
+
+    .feature-card .text h2,
+    .feature-card.reverse .text h2 {
+        font-size: 1.3rem;
+    }
+
+    .feature-card .text p,
+    .feature-card.reverse .text p {
+        font-size: 0.85rem;
+    }
+
+    .features .quote {
+        font-size: 0.85rem;
+    }
+}

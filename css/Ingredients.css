@@ -316,6 +316,31 @@ main {
         border-radius: 8px 8px 0 0;
         max-height: 50vh;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #order-items-container {
+        max-height: 150px;
+        overflow-y: auto;
+        flex-shrink: 0;
+    }
+
+    #sauce-items-container {
+        max-height: 120px;
+        overflow-y: auto;
+        flex-shrink: 0;
+    }
+
+    .sauce-section {
+        margin-top: 15px;
+        padding-top: 12px;
+        flex-shrink: 0;
+    }
+
+    .action-buttons {
+        margin-top: 15px;
+        flex-shrink: 0;
     }
 
     .category-title {
@@ -411,6 +436,19 @@ main {
         max-height: 60vh;
     }
 
+    #order-items-container {
+        max-height: 120px;
+    }
+
+    #sauce-items-container {
+        max-height: 100px;
+    }
+
+    .sauce-section {
+        margin-top: 12px;
+        padding-top: 10px;
+    }
+
     .bowl-title {
         font-size: 0.9rem;
     }
@@ -436,7 +474,7 @@ main {
 
     .action-buttons {
         gap: 8px;
-        margin-top: 15px;
+        margin-top: 12px;
     }
 
     .btn-another,

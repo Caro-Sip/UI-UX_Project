@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://placehold.co/1400x900/3d2b1f/3d2b1f') center/cover;
+                url('../Assets/Background.jpg') center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -58,4 +58,47 @@ body {
 .btn-home:active {
     background-color: var(--Button-Active);
     transform: translateY(0);
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    .map-panel {
+        min-height: 400px;
+    }
+
+    .map-placeholder {
+        height: 400px;
+    }
+
+    .btn-home {
+        padding: 10px 30px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .map-panel {
+        min-height: 300px;
+    }
+
+    .map-placeholder {
+        height: 300px;
+    }
+
+    .btn-home {
+        padding: 8px 25px;
+        font-size: 13px;
+        margin-top: 12px;
+        width: 100%;
+        max-width: 200px;
+    }
 }
