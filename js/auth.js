@@ -78,7 +78,7 @@ function login(email, password) {
 // Logout user
 function logout() {
     sessionStorage.removeItem('currentUser');
-    window.location.href = 'Homepage.html';
+    window.location.href = 'index.html';
 }
 
 // Check if user is logged in

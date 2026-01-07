@@ -12,7 +12,7 @@
     <script src="js/auth.js"></script>
     <header class="site-header">
         <div class="container header-content">
-            <a class="logo" href="Homepage.html">MalatangXFast</a>
+            <a class="logo" href="index.html">MalatangXFast</a>
             <nav class="nav">
                 <a href="#" class="nav-link">
                     Login <i class="fa-regular fa-circle-user" style="font-size: x-large;"></i>
@@ -59,7 +59,7 @@
     <script>
         // Check if already logged in
         if (isLoggedIn()) {
-            window.location.href = 'Homepage.html';
+            window.location.href = 'index.html';
         }
         
         // Handle login form submission
@@ -74,7 +74,7 @@
             if (result.success) {
                 showToast(result.message, 'success');
                 setTimeout(() => {
-                    window.location.href = 'Homepage.html';
+                    window.location.href = 'index.html';
                 }, 1000);
             } else {
                 showToast(result.message, 'error');
