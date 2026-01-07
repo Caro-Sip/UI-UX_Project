@@ -72,11 +72,25 @@ main {
     width: 120px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, filter 0.3s;
 }
 
 .item:hover {
     transform: translateY(-5px);
+}
+
+.item:active {
+    transform: translateY(-2px) scale(0.98);
+}
+
+.item.selected-flash {
+    animation: flashSelected 0.3s ease;
+}
+
+@keyframes flashSelected {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.3); }
+    100% { filter: brightness(1); }
 }
 
 .item-image {
@@ -172,6 +186,14 @@ main {
     font-weight: 600;
 }
 
+.empty-message {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
+
 .sauce-section {
     margin-top: 20px;
     padding-top: 15px;
@@ -214,4 +236,161 @@ main {
 
 .btn-checkout:hover {
     background-color: var(--Button-Hover);
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .ingredients-panel {
+        order: 1;
+        padding: 15px;
+        max-height: none;
+    }
+
+    .order-panel {
+        order: 2;
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+        border-radius: 8px 8px 0 0;
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+
+    .category-title {
+        font-size: 1.3rem;
+    }
+
+    .items-row {
+        gap: 10px;
+    }
+
+    .item {
+        width: 100px;
+    }
+
+    .item-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .item-name {
+        font-size: 0.8rem;
+    }
+
+    .bowl-header {
+        flex-direction: row;
+    }
+
+    .bowl-title {
+        font-size: 1rem;
+    }
+
+    .bowl-price {
+        font-size: 1rem;
+    }
+
+    .order-item {
+        font-size: 0.85rem;
+    }
+
+    .qty-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 1.1rem;
+    }
+
+    .btn-another,
+    .btn-checkout {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    .ingredients-panel,
+    .order-panel {
+        padding: 10px;
+    }
+
+    .category {
+        margin-bottom: 20px;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .items-row {
+        gap: 8px;
+        padding-bottom: 10px;
+    }
+
+    .item {
+        width: 80px;
+    }
+
+    .item-image {
+        width: 70px;
+        height: 70px;
+        padding: 3px;
+    }
+
+    .item-name {
+        font-size: 0.75rem;
+        margin-top: 5px;
+    }
+
+    .order-panel {
+        max-height: 60vh;
+    }
+
+    .bowl-title {
+        font-size: 0.9rem;
+    }
+
+    .bowl-price {
+        font-size: 0.9rem;
+    }
+
+    .order-item {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .order-item-left {
+        gap: 8px;
+    }
+
+    .qty-btn {
+        width: 26px;
+        height: 26px;
+        font-size: 1rem;
+    }
+
+    .action-buttons {
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .btn-another,
+    .btn-checkout {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
 }

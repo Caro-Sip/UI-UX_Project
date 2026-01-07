@@ -41,7 +41,7 @@ body {
     background: var(--BG-Primary);
     color: var(--Secondary-Text-on-Colour);
     border: none;
-    border-radius: 0; /* Sharp angles */
+    border-radius: 0;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
