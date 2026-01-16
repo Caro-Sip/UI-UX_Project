@@ -1,6 +1,6 @@
 # UI-UX_Project
 ---
-Website: https://caro-sip.github.io/UI-UX_Project/index.html
+Website: https://caro-sip.github.io/UI-UX_Project
 ---
 ## Feature
 - Temporary Sign Up and Login
