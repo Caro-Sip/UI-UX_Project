@@ -6,3 +6,4 @@ Website: https://caro-sip.github.io/UI-UX_Project
 - Temporary Sign Up and Login
 - Responsive Receipt for Ingredients Selection Screen
 - Responsive Map Selection
+- 
